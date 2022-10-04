@@ -1,0 +1,220 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+:root {
+
+    --white: #FFF;
+
+    --red-100: #b10333;
+
+    --red-200: #69001d;
+
+    --blue-100: #294c71;
+
+    --font-body: 'Trebuchet MS', Healvetica, sans-serif;
+
+}
+
+body {
+
+    background: var(--white) url(../images/fundo.png) repeat-x;
+
+    font-family: var(--font-body);  
+
+}
+
+h2.title-content {
+
+    background-color: var(--blue-100);
+
+    color: var(--white);
+
+    font-size: 1rem;
+    
+    font-weight: 900;
+
+    padding: 0.5rem;
+
+}
+
+/* CONTAINER */
+
+.container {
+
+    margin: 0 auto;
+
+    width: 1020px;
+
+}
+
+/* HEADER */
+
+.topo {
+
+    background: url(../images/detalhe-topo.png) no-repeat right top;
+    
+    height: 175px;
+
+    padding: 2rem 0.5%;
+}
+
+.logo {
+
+
+    background: url(../images/logo.png) no-repeat center;
+
+    height: 66px;
+
+    text-indent: -3000px;
+
+    width: 152px;
+
+}
+
+nav ul {
+
+    align-items: center;
+
+    background-color: var(--red-100);
+
+    display: flex;
+    
+    margin-top: 1.7rem;
+
+    justify-content: flex-start;
+
+    max-width: max-content;
+}
+
+nav ul li a {
+
+    background: url(../images/divisor.png) no-repeat left center;
+    
+    color: var(--white);
+
+    display: inline-block;
+
+    font-size: 0.75rem;
+
+    font-weight: 900;
+
+    padding: 0.6rem  2.1rem;
+
+}
+
+nav ul li a:hover {
+
+    background-color: var(--red-200);
+
+}
+
+nav ul li:first-child a {
+
+    background: none;
+
+}
+
+#home .home a,
+#brasil .brasil a,
+#internacional .internacional a,
+#fotos .fotos a {
+
+    background-color: var(--red-200);
+
+}
+
+/* MAIN */
+
+.content {
+
+    display: flex;
+
+    margin: 5rem 0;
+
+    justify-content: space-between;
+
+}
+
+aside {
+
+    flex: 1;
+
+    max-width: 24%;
+
+    margin-right: 1%;
+
+    padding: 0 2% 0 0;
+
+}
+
+main {
+
+    display: flex;
+
+    flex: 1;
+
+    justify-content: space-between;
+
+    width: 75%;
+
+}
+
+
+main #content-primary,
+main #content-secondary {
+
+    flex: 1;
+
+    
+    width: 50%;
+    
+}
+
+main #content-primary {
+    
+    margin-right: 1%;
+    /* padding: 0 1% 0 0; */
+
+}
+
+main #content-secondary {
+
+    margin-left: 1%;
+
+    /* padding: 0 0 0 1%; */
+
+}
+
+/* FOOTER */
+
+footer {
+
+    color: var(--white);
+
+    background-color: var(--blue-100);
+
+    font-size: 1rem;
+
+    font-weight: 900;
+
+    padding: 0.8rem 0;
+}
